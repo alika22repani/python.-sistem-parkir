@@ -16,7 +16,6 @@ def hapus_kendaraan(nomor, waktu_keluar, tarif_per_jam):
         waktu_masuk = data["waktu_masuk"]
         
         if waktu_keluar < waktu_masuk:
-            print("Error: Waktu keluar tidak boleh lebih kecil dari waktu masuk.")
             return
         
         durasi = waktu_keluar - waktu_masuk
